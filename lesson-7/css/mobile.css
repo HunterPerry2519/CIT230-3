@@ -22,6 +22,9 @@ body {
     }
     .navmobile{
       width: 100%;
+      display: block;
+      margin: 0 auto;
+
     }
     .summary{
 
@@ -31,7 +34,7 @@ body {
     }
     .navigation li:first-child { display: block;}
      .navigation li { display: none;}
-    .responsive li { display: block; }
+    .responsive li { display: block; width: 100%; }
 	
     .aboutdiv{
       width: 350px;
