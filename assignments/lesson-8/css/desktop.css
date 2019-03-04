@@ -1,0 +1,201 @@
+
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+/* * is a wildcard referring to all elements. */
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif ;
+    color: grey;
+    }
+    .table{
+      border: 1px solid gray;
+      border-spacing: 0px;
+    }
+
+    .toptitle{
+      color: black;
+      border: 1px solid gray;
+      margin: 0px;
+      border-spacing: 0px;
+      padding: 10px;
+      background: #7fb9c2;
+
+
+    }
+    
+    .title{
+      color: white;
+      text-align: center;
+      border: 1px solid gray;
+      margin: 0px;
+      border-spacing: 0px;
+      padding: 10px;
+      background: #628ca6;
+
+
+
+    }
+
+    .bodygrey{
+      color: black;
+      text-align: center;
+      border: 1px solid gray;
+      margin: 0px;
+      border-spacing: 0px;
+      padding: 10px;
+      background: #e7f0ed;
+
+
+    }
+    .bodygreen{
+      color: black;
+      text-align: center;
+      border: 1px solid gray;
+      margin: 0px;
+      border-spacing: 0px;
+      padding: 10px;
+      background: #e7ffed;
+
+
+    }
+
+    .footer{
+      color: black;
+      text-align: center;
+      border: 1px solid gray;
+      margin: 0px;
+      border-spacing: 0px;
+      padding: 10px;
+      background: #7fb9c2;
+
+    }
+    .thead{
+
+    }
+    .tbody{
+
+    }
+    .tfoot{
+
+    }
+
+    .summary{
+
+        margin-top: -200px;
+        position: absolute;
+      
+    }
+  
+    .navmobile
+    {
+    display: none;
+    }
+    .prestonpic{
+margin: auto 10px;  
+ }
+ .bottom{
+     justify-content: center;
+     display: flex;
+ }
+    .navdesktop {
+        width: 100%;
+        padding: 0;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ccc;  
+        display: flex;
+    }
+    .fivedayh3{
+        width: 170px;
+    }
+    .gallery{
+      margin: 5px;
+      box-shadow: 0px 0px 2px 2px #888888;
+
+    }
+    .formh3{
+      width: 100px;
+    }
+    .formdiv{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .storminput{
+      margin: 15px;
+      height: 25px;
+    }
+
+    .weatherpic{
+      width: 100%;
+      height: 85%;
+    }
+    
+    .shortenh4{
+      margin-top: -10px;
+     margin-bottom: 0px;
+     text-align: center;
+    }
+        .fivedaydiv{
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallerydiv{
+          display: grid;
+          grid-template-columns: auto auto auto;
+      }
+
+      .gallerydiv .gallery:hover{
+      box-shadow: 0px 2px 4px 4px #888888;
+    }
+      
+      .galleryh3{
+        width: 150px;
+
+      }
+        
+        .day{
+            margin: 0 25px;
+        }
+    nav ul {
+        list-style: none;
+        width: 680px;
+        margin: 0 auto;
+        padding: 0; }
+        
+    nav li {
+        float: left; }
+      
+      nav ul li a {
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change the link color on hover */
+      li a:hover {
+        background-color: #555;
+        color: white;
+        
+      }
+      .mobilebottom{
+       display: none;
+      }
+    
+    .aboutdiv{
+      width: 700px;
+    }
+      .active {
+        background-color: #4CAF50;
+        color: white;
+      }
+    
+      .header{
+        height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
