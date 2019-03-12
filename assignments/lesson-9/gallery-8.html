@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content=" CIT230 set up for learning frontend web design.">
+<title>CIT 230 Assignment Portal | Hunter Perry | BYU-Idaho</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel="stylesheet"  media="screen and (min-width: 825px)" href="css/desktop.css">
+<link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
+<link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<script>
+    window.onload = function(){
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+    today =  days[now.getDay()] + ", " +            
+             date + ", " +
+             months[now.getMonth()] + " " +
+             (fourdigits(now.getYear())) ;
+             document.getElementById('footerDate').innerHTML = today;
+    }
+    </script>
+    <script>
+    function toggleMenu() {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    }
+</script>
+
+</head>
+
+<body style="background-color:lightgrey;">
+    
+    <header class="header">
+        <h1 style="width:220px; height:50px; margin: 0 auto;font-family: 'Roboto', sans-serif;">Idaho Weather</h1>
+        <h5 class="motto" style="width:200px; height:50px; margin-top: -20px; margin-left: auto; margin-right: auto; margin-bottom: -10px;">Weather reports you can trust!</h5>
+
+            <nav class="navdesktop">
+        <ul>
+             
+            <li ><div><a  href="preston-7.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
+            <li> <a  href="preston-7.html">  Preston  </a> </li>
+            <li> <a href="">  Soda Springs  </a> </li>
+            <li> <a href="">  Fish Haven  </a> </li>
+            <li> <a href="">  Storm Center  </a> </li>
+            <li> <a class="active" href="gallery-7.html">  Gallery  </a> </li>
+
+            </ul>
+            </nav>
+
+            <nav  class="navmobile">
+                <ul class="navigation">
+                     
+                    <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
+                    <li><a href="preston7.html">   Home  </a></li>
+                    <li> <a href="preston-7.html">  Preston  </a> </li>
+                    <li> <a href="">  Soda Springs  </a> </li>
+                    <li> <a href="">  Fish Haven  </a> </li>
+                    <li> <a href="">  Storm Center  </a> </li>
+                    <li> <a class="active" href="gallery-7.html">  Gallery  </a> </li>
+                    </ul>
+                    </nav>
+        
+
+           
+
+    </header>
+    <main>
+
+        
+
+        <h3 class="galleryh3" style=" margin-top: 20px; width: 170px; margin: 0 auto;"><b>Weather Gallery</b></h3> 
+
+
+        <div class="gallerydiv">
+
+        <div class="gallery">                            
+            <img class="weatherpic"  src="images/fog.jpg"  alt="Header Picture">
+            <div>
+                    <h4 class="shortenh4">Be aware dense fog advisory.</h4> 
+                  </div>
+
+        </div>
+
+        <div class="gallery">                            
+            <img class="weatherpic"  src="images/lightning.jpg"  alt="Header Picture">
+            <div>
+                    <h4 class="shortenh4">Stay indoors wear a helmet!</h4> 
+                  </div>
+
+</div>
+
+<div class="gallery">                            
+    <img class="weatherpic"  src="images/rain.jpg"  alt="Header Picture">
+    <div>
+            <h4 class="shortenh4">Dont forget your umbrellas</h4> 
+          </div>
+
+</div>
+
+<div class="gallery">                            
+    <img class="weatherpic"  src="images/snow.jpg"  alt="Header Picture">
+    <div>
+            <h4 class="shortenh4">Drive carefully put your chains on.</h4> 
+          </div>
+
+</div>
+
+<div class="gallery">                            
+    <img class="weatherpic"  src="images/rainbow.jpg"  alt="Header Picture">
+    <div>
+            <h4 class="shortenh4">Go find the pot of Gold!</h4> 
+          </div>
+
+</div>
+
+<div class="gallery">                            
+    <img class="weatherpic"  src="images/spring.jpg"  alt="Header Picture">
+    <div>
+            <h4 class="shortenh4">Enjoy the flowers outside.</h4> 
+          </div>
+
+</div>
+
+
+
+        </div>
+
+       
+
+</body>
+</html>
