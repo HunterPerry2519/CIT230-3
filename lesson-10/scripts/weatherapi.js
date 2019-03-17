@@ -13,9 +13,9 @@ request.onload = function() {
         
     var main = jsonObj['main']
     document.getElementById("main").innerHTML = main;
-    document.getElementById("temp_max").innerHTML = main[temp];
-    document.getElementById("humidity").innerHTML = temp;
-    document.getElementById("wind").innerHTML = main.temp;
+    document.getElementById("temp_max").innerHTML = main.temp_max;
+    document.getElementById("humidity").innerHTML = main.humidity;
+    document.getElementById("wind").innerHTML = main.wind;
     }
 
 
