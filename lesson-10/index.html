@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content=" CIT230 set up for learning frontend web design.">
+<title>CIT 230 Assignment Portal | Hunter Perry | BYU-Idaho</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel="stylesheet"  media="screen and (min-width: 825px)" href="css/desktop.css">
+<link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
+<link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<script>
+    window.onload = function(){
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+    today =  days[now.getDay()] + ", " +            
+             date + ", " +
+             months[now.getMonth()] + " " +
+             (fourdigits(now.getYear())) ;
+             document.getElementById('footerDate').innerHTML = today;
+    }
+    </script>
+    <script>
+    function toggleMenu() {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    }
+</script>
+
+</head>
+
+<body style="background-color:lightgrey;">
+    
+    <header class="header">
+        <h1 style="width:220px; height:50px; margin: 0 auto;font-family: 'Roboto', sans-serif;">Idaho Weather</h1>
+        <h5 class="motto" style="width:200px; height:50px; margin-top: -20px; margin-left: auto; margin-right: auto; margin-bottom: -10px;">Weather reports you can trust!</h5>
+
+            <nav class="navdesktop">
+        <ul>
+             
+            <li ><div><a  href="preston8.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
+            <li> <a class="active" href="preston8.html">  Preston  </a> </li>
+            <li> <a href="">  Soda Springs  </a> </li>
+            <li> <a href="">  Fish Haven  </a> </li>
+            <li> <a href="">  Storm Center  </a> </li>
+            <li> <a href="gallery-8.html">  Gallery  </a> </li>
+
+            </ul>
+            </nav>
+
+            <nav  class="navmobile">
+                <ul class="navigation">
+                     
+                    <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
+                    <li><a href="preston8.html">   Home  </a></li>
+                    <li> <a class="active" href="preston8.html">  Preston  </a> </li>
+                    <li> <a href="">  Soda Springs  </a> </li>
+                    <li> <a href="">  Fish Haven  </a> </li>
+                    <li> <a href="">  Storm Center  </a> </li>
+                    <li> <a href="gallery-8.html">  Gallery  </a> </li>
+                    </ul>
+                    </nav>
+        
+
+           
+
+    </header>
+
+
+
+     
+
+
+
+    <main>
+
+        
+    
+      <div name="cities" class="cities">
+
+        <div name="city" class="city">                            
+            <div name="citytext" class="citytext">
+                    
+            </div>
+            <img class="weatherpic"   alt="Header Picture">
+
+        </div>
+    </div>
+
+
+
+  </main>
+
+  <footer>
+    
+      <div class="bottomtext" style="height: 50px; background-color: #4CAF50;  width: 100%;">
+
+          <div style="display:flex; justify-content: center; width: 600px; margin-left: auto; margin-right: auto;">
+
+       <p  style="width:580px; color:  white; margin-bottom: -30px;">@2020 The Weather Site | Attributions | Hunter Perry | <p style="color:white; width: 300px" id="footerDate"></p>    </p>
+
+          </div>
+
+      </div>
+  </footer>
+
+
+
+    <script>
+
+    var cities = document.getElementById('cities');
+
+    var city = document.getElementById('city');
+    var citytext = document.getElementById('citytext');
+
+
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+    
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+request.send();
+request.onload = function() {
+  var superHeroes = request.response;
+  populateHeader(superHeroes);
+  showHeroes(superHeroes);
+  function populateHeader(jsonObj) {
+  var myH1 = document.createElement('h1');
+  myH1.textContent = jsonObj['name'];
+  citytext.appendChild(myH1);
+
+  var myPara = document.createElement('p');
+  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+  header.appendChild(myPara);
+}
+function showHeroes(jsonObj) {
+  var heroes = jsonObj['members'];
+      
+  for (var i = 0; i < heroes.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = heroes[i].name;
+    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+    myPara2.textContent = 'Age: ' + heroes[i].age;
+    myPara3.textContent = 'Superpowers:';
+        
+    var superPowers = heroes[i].powers;
+    for (var j = 0; j < superPowers.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+}
+
+
+    </script>
+
+  </body>
+
+</html>

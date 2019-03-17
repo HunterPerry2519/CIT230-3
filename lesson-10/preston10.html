@@ -11,6 +11,7 @@
 <link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
 <link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<script src="scripts/weatherapi.js"></script>
 <script>
     window.onload = function(){
     var now = new Date();
@@ -44,8 +45,8 @@
             <nav class="navdesktop">
         <ul>
              
-            <li ><div><a  href="preston8.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
-            <li> <a class="active" href="preston8.html">  Preston  </a> </li>
+            <li ><div><a  href="preston10.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
+            <li> <a class="active" href="preston10.html">  Preston  </a> </li>
             <li> <a href="">  Soda Springs  </a> </li>
             <li> <a href="">  Fish Haven  </a> </li>
             <li> <a href="stormcenter.html">  Storm Center  </a> </li>
@@ -58,8 +59,8 @@
                 <ul class="navigation">
                      
                     <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
-                    <li><a href="preston8.html">   Home  </a></li>
-                    <li> <a class="active" href="preston8.html">  Preston  </a> </li>
+                    <li><a href="preston10.html">   Home  </a></li>
+                    <li> <a class="active" href="preston10.html">  Preston  </a> </li>
                     <li> <a href="">  Soda Springs  </a> </li>
                     <li> <a href="">  Fish Haven  </a> </li>
                     <li> <a href="stormcenter.html">  Storm Center  </a> </li>
@@ -85,11 +86,11 @@
 
                   <div class="summary" style="background-color:rgba(0, 0, 0, .5);">
                         <h4 style="color:white; text-decoration: underline; margin-top: -5px;">Weather Summary</h4> 
-                            <h5 style="color:white;  margin-top: -20px;">Currently: Sunny</h5> 
-                            <h5 style="color:white; margin-top: -20px;">High: 76°</h5> 
-                            <h5 style="color:white; margin-top: -20px;">Wind Chill: 78°</h5> 
-                            <h5 style="color:white; margin-top: -20px;">Humidity: 69%</h5> 
-                            <h5 style="color:white; margin-top: -20px; margin-bottom: -10px; ">Wind Speed: 5mph</h5> 
+                            <h5 style="color:white;  margin-top: -20px;">Currently: <h5 id="main"></h5></h5> 
+                            <h5 style="color:white; margin-top: -20px;">High: <h5 id="temp_max"></h5> </h5> 
+                            <h5 style="color:white; margin-top: -20px;">Wind Chill: <h5 id="HighTemperature"></h5></h5> 
+                            <h5 style="color:white; margin-top: -20px;">Humidity: <h5 id="humidity"></h5></h5> 
+                            <h5 style="color:white; margin-top: -20px; margin-bottom: -10px; ">Wind Speed: <h5 id="wind"></h5></h5> 
                           </div>
            
 
