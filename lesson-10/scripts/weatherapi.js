@@ -5,10 +5,10 @@ request.send();
 request.onload = function() {
    
     var Main = JSON.parse(request.responseText);     
-    document.getElementById('main').innerHTML = Main.main;
+    document.getElementById('main').innerHTML = Main.weather;
     document.getElementById('temp_max').innerHTML = Main.main.temp_max;
     document.getElementById('humidity').innerHTML = Main.main.humidity;
-    document.getElementById('wind').innerHTML = Main.main.wind;
+    document.getElementById('wind').innerHTML = Main.wind.speed;
     }
 
 
