@@ -11,7 +11,7 @@
 <link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
 <link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-<script src="scripts/weatherapi.js"></script>
+<script src="scripts/realweather.js"></script>
 <script>
     window.onload = function(){
     var now = new Date();
@@ -45,12 +45,12 @@
             <nav class="navdesktop">
         <ul>
              
-            <li ><div><a  href="preston10.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
-            <li> <a class="active" href="preston10.html">  Preston  </a> </li>
-            <li> <a href="">  Soda Springs  </a> </li>
-            <li> <a href="">  Fish Haven  </a> </li>
-            <li> <a href="stormcenter.html">  Storm Center  </a> </li>
-            <li> <a href="gallery-8.html">  Gallery  </a> </li>
+            <li ><div><a  href="preston.html"><img style="max-height: 48px; max-width: 48px; float: left; margin-left: -16px; margin-top: -8px; margin-right: 20px;" id="headerpic" src="images/Sun.jpg"  alt="Header Picture">   Home  </a></div></li>
+            <li> <a href="preston.html">  Preston  </a> </li>
+            <li> <a class="active" href="sodasprings.html">  Soda Springs  </a> </li>
+            <li> <a href="fishhaven.html">  Fish Haven  </a> </li>
+            <li> <a  href="stormcenter.html">  Storm Center  </a> </li>
+            <li> <a href="gallery.html">  Gallery  </a> </li>
 
             </ul>
             </nav>
@@ -59,12 +59,12 @@
                 <ul class="navigation">
                      
                     <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
-                    <li><a href="preston10.html">   Home  </a></li>
-                    <li> <a class="active" href="preston10.html">  Preston  </a> </li>
-                    <li> <a href="">  Soda Springs  </a> </li>
-                    <li> <a href="">  Fish Haven  </a> </li>
+                    <li><a href="preston.html">   Home  </a></li>
+                    <li> <a  href="preston.html">  Preston  </a> </li>
+                    <li> <a class="active" href="sodasprings.html">  Soda Springs  </a> </li>
+                    <li> <a href="fishhaven.html">  Fish Haven  </a> </li>
                     <li> <a href="stormcenter.html">  Storm Center  </a> </li>
-                    <li> <a href="gallery-8.html">  Gallery  </a> </li>
+                    <li> <a href="gallery.html">  Gallery  </a> </li>
                     </ul>
                     </nav>
         
@@ -77,7 +77,7 @@
         
     
         <div style="display:block;">
-                <h2 style="text-align: center">Preston</h2>
+                <h2 style="text-align: center">Soda Springs</h2>
                 <picture>
                     <source srcset="images\prestontopmobile.jpg" media="(max-width: 480px)">
                     <source srcset="images\prestontopdesktop.jpg">
@@ -106,7 +106,7 @@
                 
             <img  style="max-width: 100px; max-height: 100px;" src="images/Sun.jpg"  alt="Header Picture">
             <div class="container">
-                    <h4><b>85°</b></h4> 
+                    <h4><b id=""></b></h4> 
                   </div>
 
         </div>
