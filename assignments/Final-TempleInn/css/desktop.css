@@ -1,0 +1,129 @@
+
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+/* * is a wildcard referring to all elements. */
+body 
+{
+  font-family:  Quicksand, sans-serif ;
+  background-color: #5b616A;
+  color: #EBF2FA;
+  margin: 0px;
+}
+ 
+.beige
+{
+  background-color: #faf3dd;
+  height: 400px;
+  color: #5b616A;
+  padding: 0px;
+}
+
+.beigetitle
+{
+margin: 0;
+padding:25px;
+display: grid;
+
+}
+
+
+.beigeimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  float: right;
+  margin-top: -30px;
+  margin-right: 20px;
+  
+}
+
+.gray
+{
+  background-color: #5b616A;
+  height: 400px;
+  color: #faf3dd;
+  padding: 0px;
+
+}
+
+.graytitle
+
+{
+  margin: 0;
+  padding:25px;
+}
+
+.grayimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  float: right;
+  margin-top: -30px;
+  margin-right: 20px;
+  
+}
+
+    
+  
+    .navmobile
+    {
+    display: none;
+    }
+   
+    .navdesktop {
+        width: 100%;
+        background-color: #4E8098;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer
+    {
+      width: 100%;
+      background-color: #4E8098;
+      display: flex;
+      justify-content: center;
+    }
+    
+
+    nav ul {
+        list-style: none;
+        width: 810px;
+        margin: 0 auto;
+        padding: 0; }
+        
+    nav li {
+        float: left;
+        
+       }
+      
+      nav ul li a {
+        color: #faf3dd;
+        text-decoration: none;
+        display: block;
+        padding: 16px 16px;
+      
+      }
+      
+      /* Change the link color on hover */
+      li a:hover {
+        background-color: #faf3dd;
+        color: #4E8098;
+        
+      }
+      
+      .active {
+        background-color: #faf3dd;
+        color: #4E8098;
+      }
+    
+      .header{
+        height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    

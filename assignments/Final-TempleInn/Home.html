@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content=" CIT230 set up for learning frontend web design.">
+<title>CIT 230 Assignment Portal | Hunter Perry | BYU-Idaho</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel="stylesheet"  media="screen and (min-width: 825px)" href="css/desktop.css">
+<link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
+<link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+<script src="scripts/realweather.js"></script>
+<script>
+    window.onload = function(){
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+    today =  days[now.getDay()] + ", " +            
+             date + ", " +
+             months[now.getMonth()] + " " +
+             (fourdigits(now.getYear())) ;
+             document.getElementById('footerDate').innerHTML = today;
+    }
+    </script>
+    <script>
+    function toggleMenu() {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    }
+</script>
+
+</head>
+
+<body>
+    
+    <header>
+       
+            <nav class="navdesktop">
+        <ul>
+             
+            <li ><div><a class="active" href="Home.html">  Temple Inn and Suites  </a></div></li>
+            <li> <a href="sodasprings.html">  Soda Springs  </a> </li>
+            <li> <a href="fishhaven.html">  Fish Haven  </a> </li>
+            <li> <a href="stormcenter.html">  Storm Center  </a> </li>
+            <li> <a href="gallery.html">  Gallery  </a> </li>
+            </ul>
+            </nav>
+
+            <nav  class="navmobile">
+                <ul class="navigation">
+                     
+                    <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
+                    <li><a class="active" href="Home.html">   Home  </a></li>
+                    <li> <a href="sodasprings.html">  Soda Springs  </a> </li>
+                    <li> <a href="fishhaven.html">  Fish Haven  </a> </li>
+                    <li> <a href="stormcenter.html">  Storm Center  </a> </li>
+                    <li> <a href="gallery.html">  Gallery  </a> </li>
+                    </ul>
+                    </nav>
+        
+
+           
+
+    </header>
+    <main>
+
+        <div class="beige">
+            <h2 class="beigetitle" >Welcome!</h2>
+
+                <img class="beigeimage">    
+
+
+        </div>
+
+        <div class="gray">
+            <h2 class="graytitle" >Welcome!</h2>
+
+            <img class="grayimage">
+
+        </div>
+
+        <div class="footer">
+            <h6>2019 Temple Inn and Suites | Hunter Perry | <span id="footerDate"></span> </h6>
+            </div>
+            
+
+
+    </main> 
+
+</body>
+</html>
