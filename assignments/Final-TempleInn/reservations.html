@@ -31,6 +31,9 @@
     function toggleMenu() {
         document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
     }
+    function adjustSeverity(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 </script>
 
 </head>
@@ -42,9 +45,9 @@
         <nav class="navdesktop">
     <ul>
          
-        <li ><div><a  href="Home.html">  Temple Inn and Suites  </a></div></li>
-        <li> <a href="reservations.html">  Reservations  </a> </li>
-        <li> <a class="active" href="gallery.html"> Gallery   </a> </li>
+        <li ><div><a href="Home.html">  Temple Inn and Suites  </a></div></li>
+        <li> <a class="active" href="reservations.html">  Reservations  </a> </li>
+        <li> <a href="gallery.html"> Gallery   </a> </li>
         <li> <a href="locations.html">  Locations  </a> </li>
         <li> <a href="aboutus.html">  About us  </a> </li>
         </ul>
@@ -54,9 +57,9 @@
             <ul class="navigation">
                  
                 <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
-                <li><a  href="Home.html">   Home  </a></li>
-                <li> <a href="reservations.html">  Reservations  </a> </li>
-                <li> <a class="active" href="gallery.html">  Gallery  </a> </li>
+                <li><a href="Home.html">   Home  </a></li>
+                <li> <a class="active" href="reservations.html">  Reservations  </a> </li>
+                <li> <a href="gallery.html">  Gallery  </a> </li>
                 <li> <a href="locations.html">  Locations  </a> </li>
                 <li> <a href="aboutus.html">  About us  </a> </li>
                 </ul>
@@ -67,67 +70,68 @@
 
 </header>
     <main>
-
+<form method="GET" action="thankyou.html">
         
 
-        <h3 class="galleryh3" style=" margin-top: 20px; width: 170px; margin: 0 auto;"><b>Weather Gallery</b></h3> 
+        <div class="beige">
+            <h2 class="beigetitle" >Make a Reservation</h2>
+           
+            <div class="inputdiv">
+            <input class="input" type="text" placeholder="Full Name">
+            <input class="input" type="email" placeholder="email@email.com">
+            <input class="input" type="tel" placeholder="###-###-####">
+            <input class="input" type="number" placeholder="Zip Code">
+                </div>
+        </div>
+
+      
+        
+
+       <div class="formdiv">
+           <div>
+       Date: <input class="storminput" type="date">
+           </div>
+
+       <input class="storminput" list="stormtypelist" placeholder="Storm Type">
+       <datalist id="stormtypelist">
+           <option value="Flash Flood"></option>
+           <option value="Hail"></option>
+           <option value="Hurricane"></option>
+           <option value="Thuderstorm"></option>
+           <option value="Tornado"></option>
+
+       </datalist>
+
+       <div>
+       </div>
+
+       <input class="storminput" list="selectlist">
+       <select id="selectlist">
+
+        <option value="Select Region" disabled >Select Region </option>
+  <option value="Preston">Preston</option>
+  <option value="Soda Springs">Soda Springs</option>
+  <option value="Fish Haven">Fish Haven</option>
+
+       </select>
+<div>
+       <div>
+      
+                    </div>
+
+       <textarea placeholder="Additional Details"> </textarea>
+           <a href="thanks.html"> <input  class="storminput" placeholder="Submit"   type="submit"></a>
+
+           
 
 
-        <div class="gallerydiv">
 
-        <div class="gallery">                            
-            <img class="weatherpic"  src="images/fog.jpg"  alt="Header Picture">
-            <div>
-                    <h4 class="shortenh4">Be aware dense fog advisory.</h4> 
-                  </div>
 
         </div>
 
-        <div class="gallery">                            
-            <img class="weatherpic"  src="images/lightning.jpg"  alt="Header Picture">
-            <div>
-                    <h4 class="shortenh4">Stay indoors wear a helmet!</h4> 
-                  </div>
-
-</div>
-
-<div class="gallery">                            
-    <img class="weatherpic"  src="images/rain.jpg"  alt="Header Picture">
-    <div>
-            <h4 class="shortenh4">Dont forget your umbrellas</h4> 
-          </div>
-
-</div>
-
-<div class="gallery">                            
-    <img class="weatherpic"  src="images/snow.jpg"  alt="Header Picture">
-    <div>
-            <h4 class="shortenh4">Drive carefully put your chains on.</h4> 
-          </div>
-
-</div>
-
-<div class="gallery">                            
-    <img class="weatherpic"  src="images/rainbow.jpg"  alt="Header Picture">
-    <div>
-            <h4 class="shortenh4">Go find the pot of Gold!</h4> 
-          </div>
-
-</div>
-
-<div class="gallery">                            
-    <img class="weatherpic"  src="images/spring.jpg"  alt="Header Picture">
-    <div>
-            <h4 class="shortenh4">Enjoy the flowers outside.</h4> 
-          </div>
-
-</div>
-
-
-
         </div>
-
-       
+        </form>
+</main>
 
 </body>
 </html>

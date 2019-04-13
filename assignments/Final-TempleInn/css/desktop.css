@@ -26,6 +26,16 @@ display: grid;
 
 }
 
+.beigebody
+{
+  width: 45%;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+
+}
+
 
 .beigeimage
 {
@@ -33,8 +43,9 @@ display: grid;
   height: 300px;
   box-shadow: 0px 2px 2px 2px #888888;
   float: right;
-  margin-top: -30px;
   margin-right: 20px;
+  margin-top: -30px;
+  display: block;
   
 }
 
@@ -53,6 +64,14 @@ display: grid;
   margin: 0;
   padding:25px;
 }
+.graybody
+{
+  width: 45%;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+}
 
 .grayimage
 {
@@ -60,8 +79,9 @@ display: grid;
   height: 300px;
   box-shadow: 0px 2px 2px 2px #888888;
   float: right;
-  margin-top: -30px;
   margin-right: 20px;
+  margin-top: -30px;
+  display: block;
   
 }
 
@@ -90,7 +110,6 @@ display: grid;
 
     nav ul {
         list-style: none;
-        width: 810px;
         margin: 0 auto;
         padding: 0; }
         
@@ -125,5 +144,18 @@ display: grid;
         display: flex;
         justify-content: center;
         flex-direction: column;
+      }
+
+      .input
+      {
+         margin: 20px;
+         height: 40px;
+         width: 20%;
+         float: left;
+      }
+      .inputdiv
+      {
+        display: flex;
+        justify-content: center;
       }
     
