@@ -5,7 +5,7 @@ request.send();
 request.onload = function() {
    
     var Main = JSON.parse(request.responseText);     
-    document.getElementById('main').innerHTML = Main.weather[0].main;
+    document.getElementById('temp_max').innerHTML = Main.main.temp;
     
     }
 
