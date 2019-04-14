@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content=" CIT230 set up for learning frontend web design.">
+<title>CIT 230 Assignment Portal | Hunter Perry | BYU-Idaho</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel="stylesheet"  media="screen and (min-width: 825px)" href="css/desktop.css">
+<link rel="stylesheet"  media="screen and (max-width: 824px)" href="css/tablet.css">
+<link rel="stylesheet"  media="screen and (max-width: 480px)" href="css/mobile.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<script src="scripts/pheonix.js"></script>
+<script>
+    window.onload = function(){
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+    today =  days[now.getDay()] + ", " +            
+             date + ", " +
+             months[now.getMonth()] + " " +
+             (fourdigits(now.getYear())) ;
+             document.getElementById('footerDate').innerHTML = today;
+    }
+    </script>
+    <script>
+    function toggleMenu() {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    }
+</script>
+
+</head>
+
+<body style="background-color:lightgrey;">
+    
+    <header>
+       
+        <nav class="navdesktop">
+    <ul>
+         
+        <li ><div><a  href="Home.html">  Temple Inn and Suites  </a></div></li>
+        <li> <a href="reservations.html">  Reservations  </a> </li>
+        <li> <a href="gallery.html"> Gallery   </a> </li>
+        <li> <a href="locations.html">  Locations  </a> </li>
+        <li> <a class="active" href="aboutus.html">  About us  </a> </li>
+        </ul>
+        </nav>
+
+        <nav  class="navmobile">
+            <ul class="navigation">
+                 
+                <li><a href="#" onclick="toggleMenu()">  &#9776; Menu  </a></li>
+                <li><a  href="Home.html">   Home  </a></li>
+                <li> <a href="reservations.html">  Reservations  </a> </li>
+                <li> <a href="gallery.html">  Gallery  </a> </li>
+                <li> <a href="locations.html">  Locations  </a> </li>
+                <li> <a class="active" href="aboutus.html">  About us  </a> </li>
+                </ul>
+                </nav>
+
+</header>
+    <main>
+
+        <div class="beige">
+            <h2 class="beigetitle" >Pheonix Arizona</h2>
+            <h4 class="beigebody" > Even in a desert there can be found a house of God to admire and spend time in.</h4>
+
+                <img src="images/pheonix.jpg" class="beigeimage">    
+
+
+        </div>
+
+        <div class="gray">
+                 <h2 class="graytitle" >Map</h2>
+                 <iframe class="grayimage" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425345.0131559499!2d-112.40523857935825!3d33.60509909659122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C+AZ!5e0!3m2!1sen!2sus!4v1555270026116!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                    </div>           
+
+        </div>
+
+        <div class="beige">
+                <h2 class="beigetitle" >Weather</h2>
+    
+                <h5 style="  margin-top: -20px; margin-left: 25px;">Currently: <span id="temp-max"></span></h5> 
+
+    
+    
+            </div>
+
+        <div class="footer">
+            <h6 class="footertext">2019 Temple Inn and Suites | Hunter Perry | <span id="footerDate"></span> </h6>
+            </div>
+
+       </main>
+
+    <footer>
+      
+      
+
+    </footer>
+
+</body>
+</html>
