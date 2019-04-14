@@ -46,6 +46,7 @@ display: grid;
 .gallerydiv{
   display: grid;
   grid-template-columns: auto auto auto;
+  width: 100%;
 }
 
 .beigebody
@@ -139,8 +140,8 @@ color: #EBF2FA;
       color: #b6b6b6;
     }
     .image{
-      width: 400px;
-      height: 300px;
+      width: 100%;
+      max-height: 300px;
 
     }
 
