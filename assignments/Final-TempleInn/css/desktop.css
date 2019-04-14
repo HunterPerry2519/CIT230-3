@@ -29,6 +29,14 @@ display: grid;
 .gallery{
   margin: 5px;
   box-shadow: 0px 0px 2px 2px #888888;
+  
+
+}
+
+.gallery2{
+ 
+  display: flex;
+  justify-content: center;
 
 }
 .gallerydiv .gallery:hover{
@@ -127,6 +135,14 @@ color: #EBF2FA;
       justify-content: center;
     }
     
+    a{
+      color: #b6b6b6;
+    }
+    .image{
+      width: 400px;
+      height: 300px;
+
+    }
 
     nav ul {
         list-style: none;
