@@ -1,6 +1,6 @@
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=fc0587bc76f9c5a27585b00097149b4f&units=imperial' , true);
+request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?zip=83287,us&APPID=fc0587bc76f9c5a27585b00097149b4f&units=imperial' , true);
 request.send();
 request.onload = function() {
    
@@ -12,7 +12,7 @@ request.onload = function() {
     }
 
     var request2 = new XMLHttpRequest();
-request2.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=fc0587bc76f9c5a27585b00097149b4f&units=imperial' , true);
+request2.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&APPID=fc0587bc76f9c5a27585b00097149b4f&units=imperial' , true);
 request2.send();
 request2.onload = function() {
    
