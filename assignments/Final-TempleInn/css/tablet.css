@@ -3,116 +3,186 @@
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
 body {
-    font-size: 16px;
-    line-height: 32px;
-    font-family:  Ubuntu, sans-serif ;
-    color: grey;
-    }
-    
-    .summary{
-
-        margin-top: -200px;
-        position: absolute;
-      
-    }
-  
-    .navmobile
-    {
+  font-family:  Quicksand, sans-serif ;
+  background-color: #5b616A;
+  color: #EBF2FA;
+  margin: 0px;
+  }
+  .navdesktop{
     display: none;
-    }
-    .prestonpic{
-margin: auto 10px;  
- }
- .bottom{
-     justify-content: center;
-     display: flex;
- }
-    .navdesktop {
-        width: 100%;
-        padding: 0;
-        background-color: #f2f2f2;
-        border-bottom: 1px solid #ccc;  
-        display: flex;
-    }
-    .fivedayh3{
-        width: 170px;
-    }
-    .gallery{
-      margin: 5px;
-      box-shadow: 0px 0px 2px 2px #888888;
+    height: 0;
+  }
+  
+  .navmobile{
+    width: 100%;
+    display: block;
+    margin-left: -40px;
+  }
+ 
+  .navigation li:first-child { display: block;}
+   .navigation li { display: none;}
+  .responsive li { display: block; width: 100%; }
 
-    }
-    .weatherpic{
+  
+  .navigation {
+      list-style-type: none;
+      margin: 0;
       width: 100%;
-      height: 85%;
+      background-color: #4E8098;
+      height: auto;
     }
-    
-    .shortenh4{
-      margin-top: -10px;
-     margin-bottom: 0px;
-     text-align: center;
-    }
-        .fivedaydiv{
-            display: flex;
-            justify-content: center;
-        }
 
-        .gallerydiv{
-          display: grid;
-          grid-template-columns: auto auto;
-      }
 
-      .gallerydiv .gallery:hover{
-      box-shadow: 0px 2px 4px 4px #888888;
+    li {
+      text-align: center;
+      height: auto;
+      margin: 0;
+      width: 100%;
     }
-      
-      .galleryh3{
-        width: 150px;
 
-      }
-        
-        .day{
-            margin: 0 25px;
-        }
-    nav ul {
-        list-style: none;
-        width: 680px;
-        margin: 0 auto;
-        padding: 0; }
-        
-    nav li {
-        float: left; }
-      
-      nav ul li a {
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      /* Change the link color on hover */
-      li a:hover {
-        background-color: #555;
-        color: white;
-        
-      }
-      .mobilebottom{
-       display: none;
-      }
+   
+  
     
-    .aboutdiv{
-      width: 700px;
+    nav ul li a {
+      color: #faf3dd;
+      text-decoration: none;
+      width: 100%;
+      display: block;
+      margin: 0;
+      padding: 16px 16px;
+
     }
-      .active {
-        background-color: #4CAF50;
-        color: white;
-      }
     
-      .header{
-        height: auto;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
-    
+    /* Change the link color on hover */
+    li a:hover {
+      background-color: #faf3dd;
+      color: #4E8098;
+      
+    }
+   
+  
+ 
+
+    .beige
+{
+  background-color: #faf3dd;
+  height: 650px;
+  color: #5b616A;
+  padding: 0px;
+ 
+}
+
+.beigetitle
+{
+margin: 0 auto;
+padding:25px;
+width: 100px;
+text-align: center;
+display: block;
+
+}
+
+.gallery{
+  margin: 5px;
+  box-shadow: 0px 0px 2px 2px #888888;
+
+}
+.gallerydiv .gallery:hover{
+  box-shadow: 0px 2px 4px 4px #888888;
+}
+
+.gallerydiv{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.beigebody
+{
+  width: 90%;
+  display: block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+
+}
+
+.footertext
+{
+color: #EBF2FA;
+
+}
+
+
+.beigeimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  display: block;
+  
+}
+
+.gray
+{
+  background-color: #5b616A;
+  height: 650px;
+  color: #faf3dd;
+  padding: 0px;
+
+}
+
+.footer
+{
+  width: 100%;
+  background-color: #4E8098;
+  display: flex;
+  justify-content: center;
+}
+
+.footertext
+{
+color: #EBF2FA;
+
+}
+
+
+.graytitle
+
+{
+  margin: 0 auto;
+padding:25px;
+width: 100px;
+text-align: center;
+display: block;
+}
+.graybody
+{
+  width: 90%;
+  display: block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+}
+.active {
+  background-color: #faf3dd;
+  color: #4E8098;
+}
+
+.grayimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  display: block;
+  
+  
+}
+
+   
+  

@@ -26,6 +26,20 @@ display: grid;
 
 }
 
+.gallery{
+  margin: 5px;
+  box-shadow: 0px 0px 2px 2px #888888;
+
+}
+.gallerydiv .gallery:hover{
+  box-shadow: 0px 2px 4px 4px #888888;
+}
+
+.gallerydiv{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .beigebody
 {
   width: 45%;
@@ -33,6 +47,12 @@ display: grid;
   padding-left: 25px;
   padding-top: 5px;
   line-height: 3;
+
+}
+
+.footertext
+{
+color: #EBF2FA;
 
 }
 
@@ -155,6 +175,7 @@ display: grid;
       }
       .inputdiv
       {
+        margin: 20px;
         display: flex;
         justify-content: center;
       }

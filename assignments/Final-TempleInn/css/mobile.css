@@ -2,93 +2,184 @@
 /* CIT 230 - Assignment Portal CSS Template */
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
-body {
-    font-size: 16px;
-    line-height: 32px;
-    font-family:  Ubuntu, sans-serif ;
-    color: grey;
+body 
+{
+  font-family:  Quicksand, sans-serif ;
+  background-color: #5b616A;
+  color: #EBF2FA;
+  margin: 0px;
+}
+ 
+.beige
+{
+  background-color: #faf3dd;
+  height: 400px;
+  color: #5b616A;
+  padding: 0px;
+}
+
+.beigetitle
+{
+margin: 0;
+padding:25px;
+display: grid;
+
+}
+
+.gallery{
+  margin: 5px;
+  box-shadow: 0px 0px 2px 2px #888888;
+
+}
+.gallerydiv .gallery:hover{
+  box-shadow: 0px 2px 4px 4px #888888;
+}
+
+.gallerydiv{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.beigebody
+{
+  width: 45%;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+
+}
+
+.footertext
+{
+color: #EBF2FA;
+
+}
+
+
+.beigeimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  float: right;
+  margin-right: 20px;
+  margin-top: -30px;
+  display: block;
+  
+}
+
+.gray
+{
+  background-color: #5b616A;
+  height: 400px;
+  color: #faf3dd;
+  padding: 0px;
+
+}
+
+.graytitle
+
+{
+  margin: 0;
+  padding:25px;
+}
+.graybody
+{
+  width: 45%;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 3;
+}
+
+.grayimage
+{
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 2px 2px 2px #888888;
+  float: right;
+  margin-right: 20px;
+  margin-top: -30px;
+  display: block;
+  
+}
+
+    
+  
+.navmobile{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+
+}
+   
+    .navdesktop {
+        display: none;
     }
-    .navdesktop{
-      display: none;
-      height: 0;
-    }
-    .fivedayh3{
-    display: none;
-    height: 0;
-    }
-    .fivedaydiv{
-    display: none;
-    height: 0;
-    }
-    .navmobile{
+
+    .footer
+    {
       width: 100%;
-      display: block;
-      margin: 0 auto;
-
+      background-color: #4E8098;
+      display: flex;
+      justify-content: center;
     }
-    .summary{
 
-        margin-top: -200px;
-        position: absolute;
-      
-    }
     .navigation li:first-child { display: block;}
      .navigation li { display: none;}
     .responsive li { display: block; width: 100%; }
-	
-    .aboutdiv{
-      width: 350px;
-    }
-  
-    .bottom{
-        position: relative;
-        display: block;
-        width: 100%;
-    }
-    .navigation {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: auto;
-        background-color: #f1f1f1;
-      }
-      li {
-        text-align: center;
-      }
     
-      .bottomtext{
-        width:380px;
-      }
+
+    nav ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0; }
+        
+    nav li {
+        float: left;
+        
+       }
       
       nav ul li a {
-        color: #000;
-        padding: 8px 16px;
+        color: #faf3dd;
         text-decoration: none;
+        display: block;
+        padding: 16px 16px;
+      
       }
       
       /* Change the link color on hover */
       li a:hover {
-        background-color: #555;
-        color: white;
+        background-color: #faf3dd;
+        color: #4E8098;
+        
       }
-      .gallerydiv{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    .galleryh3{
-      width: 150px;
-
-    }
-
-    .gallerydiv .gallery:hover{
-    box-shadow: 0px 2px 4px 4px #888888;
-  }
-    
+      
       .active {
-        background-color: #4CAF50;
-        color: white;
+        background-color: #faf3dd;
+        color: #4E8098;
       }
+    
       .header{
-        min-height: 48px;
+        height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .input
+      {
+         margin: 20px;
+         height: 40px;
+         width: 20%;
+         float: left;
+      }
+      .inputdiv
+      {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
       }
     

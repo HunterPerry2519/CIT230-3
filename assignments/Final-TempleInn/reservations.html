@@ -38,7 +38,7 @@
 
 </head>
 
-<body style="background-color:lightgrey;">
+<body>
     
     <header>
        
@@ -70,7 +70,7 @@
 
 </header>
     <main>
-<form method="GET" action="thankyou.html">
+<form method="GET" action="thanks.html">
         
 
         <div class="beige">
@@ -82,55 +82,37 @@
             <input class="input" type="tel" placeholder="###-###-####">
             <input class="input" type="number" placeholder="Zip Code">
                 </div>
-        </div>
 
-      
-        
+                <div class="inputdiv">
+                 <input class="input" type="date">
+                        
+       <select class="input" id="selectlist">
 
-       <div class="formdiv">
-           <div>
-       Date: <input class="storminput" type="date">
-           </div>
-
-       <input class="storminput" list="stormtypelist" placeholder="Storm Type">
-       <datalist id="stormtypelist">
-           <option value="Flash Flood"></option>
-           <option value="Hail"></option>
-           <option value="Hurricane"></option>
-           <option value="Thuderstorm"></option>
-           <option value="Tornado"></option>
-
-       </datalist>
-
-       <div>
-       </div>
-
-       <input class="storminput" list="selectlist">
-       <select id="selectlist">
-
-        <option value="Select Region" disabled >Select Region </option>
-  <option value="Preston">Preston</option>
-  <option value="Soda Springs">Soda Springs</option>
-  <option value="Fish Haven">Fish Haven</option>
+        <option value="Select Region" disabled >Select Location </option>
+  <option value="Preston">Rome Italy</option>
+  <option value="Soda Springs">Laie Hawaii</option>
+  <option value="Fish Haven">San Diego</option>
 
        </select>
-<div>
-       <div>
-      
-                    </div>
-
-       <textarea placeholder="Additional Details"> </textarea>
-           <a href="thanks.html"> <input  class="storminput" placeholder="Submit"   type="submit"></a>
-
-           
 
 
 
-
-        </div>
+                <input  class="input" placeholder="Submit"   type="submit">
 
         </div>
         </form>
+
+        <div class="gray">
+            <h2 class="graytitle" >Thank you!</h2>
+            <h4 class="graybody" >Only a few boxes to fill out untill vacation awaits!</h4>
+
+            <img class="grayimage">
+
+        </div>
+
+        <div class="footer">
+            <h6 class="footertext">2019 Temple Inn and Suites | Hunter Perry | <span id="footerDate"></span> </h6>
+            </div>
 </main>
 
 </body>
